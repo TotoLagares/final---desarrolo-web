@@ -1,0 +1,54 @@
+.linea2 {
+    @include lineas }
+.divlogoft{
+    .logoft {
+        margin-left: 5vh;
+        width: 50vh; }
+}
+.contenedorlogos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+   .icon {
+    position: relative;
+    width: 3.7rem;
+    height: 3.7rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+        a{
+            i{
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 2rem;   
+            }
+        }
+    &:hover {
+        background-color: map-get($colores , color-fb-tw );
+        box-shadow: 0 0 20px map-get($colores , color-amarilloclaro ); }
+      
+    &:hover:nth-child(2) {
+        background-color: map-get($colores , color-discord );
+        box-shadow: 0 0 20px map-get($colores , color-amarilloclaro ); }
+      
+    &:hover:nth-child(1) {
+        background-color: #1877f2;
+        box-shadow: 0 0 20px map-get($colores , color-amarilloclaro ); }
+      
+    &:hover:nth-child(3) {
+        background-color: #1da1f2;
+        box-shadow: 0 0 20px map-get($colores , color-amarilloclaro ); } 
+    }
+}
+@media screen and (max-width: 767px) {
+    .divlogoft{
+        .logoft {
+            margin-left: 5vh;
+            width: 30vh; }
+    }
+}     

@@ -1,0 +1,13 @@
+@mixin carta{
+    margin-bottom: 0.5rem;
+    font-size: calc(1.275rem + 0.3vw);
+    color: map-get($colores , color-subtitulos );
+    font-family: Nerko One, cursive;
+}
+@mixin lineas{
+    border: 1px solid #BC2121;
+    color: map-get($colores , color-subtitulos );
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 0;
+}

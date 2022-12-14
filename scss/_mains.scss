@@ -21,7 +21,7 @@ body {
       background-size: 100% 15%; } }
 /*Generales*/
 .h1color {
-    color: map-get($colores, color-titulo);
+    color: map-get($colores, color-titulos);
     font-family: Nerko One, cursive;
     font-size: 3.5rem; 
 }
